@@ -1,0 +1,78 @@
+/* Button Styling */
+.mybutton {
+  text-decoration: none;
+  padding: 5px;
+  color: #FFAB4A;
+  background-color: transparent;
+  border: 1px solid #FFAB4A;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.mybutton:hover {
+  color: #000;
+  background-color: #FFAB4A;
+}
+
+/* Header Styling */
+.mainheader {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Content Styling */
+.maincontent {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Flip Card Container */
+.flip-card {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  perspective: 1000px;
+  background-color: transparent;
+}
+
+/* Flip Card Inner */
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Flip Card Sides */
+.flip-card-front, 
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  padding-top: 125px;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-front {
+  background-color: #77DBBD;
+  color: #000;
+}
+
+.flip-card-back {
+  background-color: #33062D;
+  color: #FFF;
+  transform: rotateY(180deg);
+}
